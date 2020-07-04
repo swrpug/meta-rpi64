@@ -26,6 +26,13 @@ export QT_QPA_PLATFORM=linuxfb
 # set a rotate value appropriate with the one used in the overlay 
 #export QT_QPA_EVDEV_TOUCHSCREEN_PARAMETERS=/dev/input/touchscreen0:rotate=90
 
+# for the waveshare 10" touchscreen
+export QT_QPA_EGLFS_WIDTH=848
+export QT_QPA_EGLFS_HEIGHT=480
+export QT_QPA_EGLFS_PHYSICAL_WIDTH=223.0
+export QT_QPA_EGLFS_PHYSICAL_HEIGHT=125
+export QT_QPA_EVDEV_TOUCHSCREEN_PARAMETERS=/dev/input/touchscreen0
+
 if [ -z "${XDG_RUNTIME_DIR}" ]; then
     export XDG_RUNTIME_DIR=/tmp/user/${UID}
 
